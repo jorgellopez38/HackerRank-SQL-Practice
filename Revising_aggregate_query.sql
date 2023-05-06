@@ -4,6 +4,7 @@
 SELECT COUNT(*)
 FROM CITY
 WHERE POPULATION > 100000;
+
 ###############################################################################################
 
 -- Query the total population of all cities in CITY where District is California.
@@ -49,7 +50,7 @@ FROM CITY;
 -- the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
 -- Write a query calculating the amount of error (i.e.: actual - miscalculated average monthly salaries), and round it up to the next integer.
 
-SELECT (ROUND(AVG(ROUND(Salary,0)),0)) -                     (ROUND(AVG(REPLACE(ROUND(Salary,0),'0',"")),0)) 
+SELECT (ROUND(AVG(ROUND(Salary,0)),0)) - (ROUND(AVG(REPLACE(ROUND(Salary,0),'0',"")),0)) 
 FROM EMPLOYEES;
 
 ###############################################################################################
