@@ -137,7 +137,7 @@ SELECT
     WHEN A = B AND B = C THEN 'Equilateral'
     WHEN A = B OR A = C OR B = C THEN 'Isosceles'
     ELSE 'Scalene'
-  END AS TriangleType
+  END AS Triangle_type
 FROM TRIANGLES;
 
 ###############################################################################################
